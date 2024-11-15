@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.mybookshelf"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.mybookshelf"
@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-
+    
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
