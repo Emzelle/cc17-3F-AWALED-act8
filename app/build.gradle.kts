@@ -1,7 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
 }
+
 
 android {
     namespace = "com.example.mybookshelf"
@@ -45,4 +47,14 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.gson)
+    implementation (libs.moshi)
+    implementation (libs.moshi.kotlin)
+    kapt (libs.moshi.kotlin.codegen)
+    implementation (libs.kotlinx.coroutines.android)
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+    implementation (libs.androidx.activity.activity.ktx)
 }
